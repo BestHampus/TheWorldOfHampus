@@ -11,18 +11,17 @@
             color: lime;
             margin: 0;
             display: flex;
-            white-space: nowrap;
             justify-content: center;
             align-items: center;
             height: 100vh;
             width: 100vw;
             text-align: center;
-            text-overflow: ellipsis;
             overflow: hidden;
             position: relative;
         }
         h1 {
             font-size: 60px;
+            margin-top: 20px;
         }
         p {
             font-size: 30px;
@@ -34,9 +33,20 @@
         a:hover {
             text-decoration: underline;
         }
+        #scroll-container {
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            white-space: nowrap;
+        }
         #content {
             position: relative;
             z-index: 1;
+            padding-top: 20px; /* Added padding to prevent cutting off the top */
         }
         #scanlines {
             position: absolute;
@@ -57,24 +67,25 @@
     </style>
 </head>
 <body>
-    <div id="content">
-        <h1>WELCOME TO HAMPUS WORLD!</h1>
-        <p>So any of you guys who can read Swedish?</p>
-        <p>And I have a boyfriend now.</p>
-        <p>I know right, I didn't think that'd happend either.</p>
-        <p>Also, apparently I can make as many sentences as I want.</p>
-        <p>So did you guys see that new video from Markiplier?</p>
-        <p>He played the game called:
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">FLATHEAD!</a></p>
-        <p>That game looks scary, but also good.</p>
-        <p>Fun fact: if you want to meet me on VRChat, just look for a guy called BestHampus.</p>
-        <p>I'm normaly snuggle or talk to my boyfriend when you find me.</p>
-        <p>As he's with me 85% of the time.</p>
-        <p>Anyway, see ya there, ye?</p><br>
-        <p>Follow me on social media, would ya?</p>
-        <p><a href="https://twitter.com/BESTHAMPUS" target="_blank">Twitter</a></p>
-        <p><a href="https://www.tiktok.com/@besthampus?_t=8nXcyNyqXxI&_r=1" target="_blank">TikTok</a></p>
-        <p><a href="https://youtube.com/@hampusisbest?si=iXJP548P7OzswvgZ" target="_blank">YouTube</a></p> 
+    <div id="scroll-container">
+        <div id="content">
+            <h1>WELCOME TO HAMPUS WORLD!</h1>
+            <p>Today I will snuggle my boyfriend!</p>
+            <p>If you can get Riley to read this...</p>
+            <p>Could you tell her I no longer hate her?</p>
+            <p>I don't care for her, or her friends.</p>
+            <p>Also my friend Winchester on VRChat is very sus!</p>
+            <p>I don't know what else to type here so...</p>
+            <p>I'll just fill the rest with weird thoughts I have!</p><br>
+            <p>I don't like Pinapples!</p>
+            <p>Pinapples do NOT belong on pizza!</p>
+            <p>I'm so bored!</p><br>
+            <p>Follow me on social media, would ya?</p>
+            <p><a href="https://twitter.com/BESTHAMPUS" target="_blank">Twitter</a></p>
+            <p><a href="https://www.tiktok.com/@besthampus?_t=8nXcyNyqXxI&_r=1" target="_blank">TikTok</a></p>
+            <p><a href="https://youtube.com/@hampusisbest?si=iXJP548P7OzswvgZ" target="_blank">YouTube</a></p> 
+        </div>
+    </div>
     <div id="scanlines"></div>
 </body>
 </html>
